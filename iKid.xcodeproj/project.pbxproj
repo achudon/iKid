@@ -13,6 +13,13 @@
 		9D15FDC11CD1ABC00086173B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D15FDBF1CD1ABC00086173B /* Main.storyboard */; };
 		9D15FDC31CD1ABC00086173B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D15FDC21CD1ABC00086173B /* Assets.xcassets */; };
 		9D15FDC61CD1ABC00086173B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D15FDC41CD1ABC00086173B /* LaunchScreen.storyboard */; };
+		9D15FDCE1CD1B4900086173B /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15FDCD1CD1B4900086173B /* SwitchViewController.swift */; };
+		9D15FDD01CD1B4DE0086173B /* GoodJokeViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15FDCF1CD1B4DE0086173B /* GoodJokeViewController1.swift */; };
+		9D15FDD21CD1B4EF0086173B /* GoodJokeViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15FDD11CD1B4EF0086173B /* GoodJokeViewController2.swift */; };
+		9D15FDD41CD1B5F50086173B /* DadJokeViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15FDD31CD1B5F50086173B /* DadJokeViewController1.swift */; };
+		9D15FDD61CD1B5FF0086173B /* DadJokeViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15FDD51CD1B5FF0086173B /* DadJokeViewController2.swift */; };
+		9D15FDD81CD1B6120086173B /* PunViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15FDD71CD1B6120086173B /* PunViewController1.swift */; };
+		9D15FDDA1CD1B61C0086173B /* PunViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15FDD91CD1B61C0086173B /* PunViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		9D15FDC21CD1ABC00086173B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D15FDC51CD1ABC00086173B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D15FDC71CD1ABC00086173B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D15FDCD1CD1B4900086173B /* SwitchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
+		9D15FDCF1CD1B4DE0086173B /* GoodJokeViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodJokeViewController1.swift; sourceTree = "<group>"; };
+		9D15FDD11CD1B4EF0086173B /* GoodJokeViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodJokeViewController2.swift; sourceTree = "<group>"; };
+		9D15FDD31CD1B5F50086173B /* DadJokeViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadJokeViewController1.swift; sourceTree = "<group>"; };
+		9D15FDD51CD1B5FF0086173B /* DadJokeViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadJokeViewController2.swift; sourceTree = "<group>"; };
+		9D15FDD71CD1B6120086173B /* PunViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunViewController1.swift; sourceTree = "<group>"; };
+		9D15FDD91CD1B61C0086173B /* PunViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,13 @@
 				9D15FDC21CD1ABC00086173B /* Assets.xcassets */,
 				9D15FDC41CD1ABC00086173B /* LaunchScreen.storyboard */,
 				9D15FDC71CD1ABC00086173B /* Info.plist */,
+				9D15FDCD1CD1B4900086173B /* SwitchViewController.swift */,
+				9D15FDCF1CD1B4DE0086173B /* GoodJokeViewController1.swift */,
+				9D15FDD11CD1B4EF0086173B /* GoodJokeViewController2.swift */,
+				9D15FDD31CD1B5F50086173B /* DadJokeViewController1.swift */,
+				9D15FDD51CD1B5FF0086173B /* DadJokeViewController2.swift */,
+				9D15FDD71CD1B6120086173B /* PunViewController1.swift */,
+				9D15FDD91CD1B61C0086173B /* PunViewController2.swift */,
 			);
 			path = iKid;
 			sourceTree = "<group>";
@@ -138,9 +159,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D15FDD01CD1B4DE0086173B /* GoodJokeViewController1.swift in Sources */,
 				9D15FDBE1CD1ABC00086173B /* SecondViewController.swift in Sources */,
+				9D15FDD61CD1B5FF0086173B /* DadJokeViewController2.swift in Sources */,
 				9D15FDBA1CD1ABC00086173B /* AppDelegate.swift in Sources */,
+				9D15FDD81CD1B6120086173B /* PunViewController1.swift in Sources */,
+				9D15FDCE1CD1B4900086173B /* SwitchViewController.swift in Sources */,
 				9D15FDBC1CD1ABC00086173B /* FirstViewController.swift in Sources */,
+				9D15FDD41CD1B5F50086173B /* DadJokeViewController1.swift in Sources */,
+				9D15FDD21CD1B4EF0086173B /* GoodJokeViewController2.swift in Sources */,
+				9D15FDDA1CD1B61C0086173B /* PunViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
