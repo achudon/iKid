@@ -13,7 +13,7 @@
 		9D15FDC11CD1ABC00086173B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D15FDBF1CD1ABC00086173B /* Main.storyboard */; };
 		9D15FDC31CD1ABC00086173B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D15FDC21CD1ABC00086173B /* Assets.xcassets */; };
 		9D15FDC61CD1ABC00086173B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D15FDC41CD1ABC00086173B /* LaunchScreen.storyboard */; };
-		9D15FDCE1CD1B4900086173B /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15FDCD1CD1B4900086173B /* SwitchViewController.swift */; };
+		9D15FDCE1CD1B4900086173B /* GoodJokeSwitchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15FDCD1CD1B4900086173B /* GoodJokeSwitchController.swift */; };
 		9D15FDD01CD1B4DE0086173B /* GoodJokeViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15FDCF1CD1B4DE0086173B /* GoodJokeViewController1.swift */; };
 		9D15FDD21CD1B4EF0086173B /* GoodJokeViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15FDD11CD1B4EF0086173B /* GoodJokeViewController2.swift */; };
 		9D15FDD41CD1B5F50086173B /* DadJokeViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15FDD31CD1B5F50086173B /* DadJokeViewController1.swift */; };
@@ -31,7 +31,7 @@
 		9D15FDC21CD1ABC00086173B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D15FDC51CD1ABC00086173B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D15FDC71CD1ABC00086173B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D15FDCD1CD1B4900086173B /* SwitchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
+		9D15FDCD1CD1B4900086173B /* GoodJokeSwitchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodJokeSwitchController.swift; sourceTree = "<group>"; };
 		9D15FDCF1CD1B4DE0086173B /* GoodJokeViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodJokeViewController1.swift; sourceTree = "<group>"; };
 		9D15FDD11CD1B4EF0086173B /* GoodJokeViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodJokeViewController2.swift; sourceTree = "<group>"; };
 		9D15FDD31CD1B5F50086173B /* DadJokeViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadJokeViewController1.swift; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 				9D15FDC21CD1ABC00086173B /* Assets.xcassets */,
 				9D15FDC41CD1ABC00086173B /* LaunchScreen.storyboard */,
 				9D15FDC71CD1ABC00086173B /* Info.plist */,
-				9D15FDCD1CD1B4900086173B /* SwitchViewController.swift */,
+				9D15FDCD1CD1B4900086173B /* GoodJokeSwitchController.swift */,
 				9D15FDCF1CD1B4DE0086173B /* GoodJokeViewController1.swift */,
 				9D15FDD11CD1B4EF0086173B /* GoodJokeViewController2.swift */,
 				9D15FDD31CD1B5F50086173B /* DadJokeViewController1.swift */,
@@ -164,7 +164,7 @@
 				9D15FDD61CD1B5FF0086173B /* DadJokeViewController2.swift in Sources */,
 				9D15FDBA1CD1ABC00086173B /* AppDelegate.swift in Sources */,
 				9D15FDD81CD1B6120086173B /* PunViewController1.swift in Sources */,
-				9D15FDCE1CD1B4900086173B /* SwitchViewController.swift in Sources */,
+				9D15FDCE1CD1B4900086173B /* GoodJokeSwitchController.swift in Sources */,
 				9D15FDBC1CD1ABC00086173B /* FirstViewController.swift in Sources */,
 				9D15FDD41CD1B5F50086173B /* DadJokeViewController1.swift in Sources */,
 				9D15FDD21CD1B4EF0086173B /* GoodJokeViewController2.swift in Sources */,
@@ -320,6 +320,7 @@
 				9D15FDCC1CD1ABC00086173B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

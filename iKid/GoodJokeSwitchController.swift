@@ -1,5 +1,5 @@
 //
-//  SwitchViewController.swift
+//  GoodJokeSwitchController.swift
 //  iKid
 //
 //  Created by iGuest on 4/27/16.
@@ -8,48 +8,28 @@
 
 import UIKit
 
-public class SwitchViewController: UIViewController {
+class GoodJokeSwitchController: UIViewController {
     
     private var goodJokeViewController1 : GoodJokeViewController1!
     private var goodJokeViewController2 : GoodJokeViewController2!
     
-    private var dadJokeViewController1 : DadJokeViewController1!
-    private var dadJokeViewController2 : DadJokeViewController2!
-    
-    private var punViewController1 : PunViewController1!
-    private var punViewController2 : PunViewController2!
-    
-    
-    
-    private func setController(controllerName : String, controllerType : ) {
+    private func firstBuilder() {
         if goodJokeViewController1 == nil {
             goodJokeViewController1 =
                 storyboard?
-                    .instantiateViewControllerWithIdentifier(controllerName)
-                as! controllerType
-        }
-    }
-    
-    private func firstBuilder() {
-        if firstViewController == nil {
-            firstViewController =
-                storyboard?
-                    .instantiateViewControllerWithIdentifier("First")
-                as! FirstViewController
+                    .instantiateViewControllerWithIdentifier("Good1")
+                as! GoodJokeViewController1
         }
     }
     private func secondBuilder() {
-        if secondViewController == nil {
-            secondViewController =
+        if goodJokeViewController2 == nil {
+            goodJokeViewController2 =
                 storyboard?
-                    .instantiateViewControllerWithIdentifier("Second")
-                as! SecondViewController
+                    .instantiateViewControllerWithIdentifier("Good2")
+                as! GoodJokeViewController2
         }
     }
     
-    public func switchViews() {
-        
-    }
     
     @IBAction func switchViews(sender: UIBarButtonItem) {
         secondBuilder()
@@ -59,21 +39,21 @@ public class SwitchViewController: UIViewController {
         UIView.setAnimationDuration(0.4)
         UIView.setAnimationCurve(.EaseInOut)
         
-        if firstViewController != nil &&
-            firstViewController?.view.superview != nil {
+        if goodJokeViewController1 != nil &&
+            goodJokeViewController1?.view.superview != nil {
             UIView.setAnimationTransition(.FlipFromRight, forView: view, cache: true)
-            secondViewController.view.frame = view.frame
-            switchViewController(firstViewController, to: secondViewController)
+            goodJokeViewController2.view.frame = view.frame
+            switchViewController(goodJokeViewController1, to: goodJokeViewController2)
         }
         else {
             UIView.setAnimationTransition(.FlipFromLeft, forView: view, cache: true)
-            firstViewController.view.frame = view.frame
-            switchViewController(secondViewController, to: firstViewController)
+            goodJokeViewController1.view.frame = view.frame
+            switchViewController(goodJokeViewController2, to: goodJokeViewController1)
         }
         UIView.commitAnimations()
     }
     
-    public func switchViewController(from: UIViewController?, to: UIViewController?) {
+    func switchViewController(from: UIViewController?, to: UIViewController?) {
         if from != nil {
             from!.willMoveToParentViewController(nil)
             from!.view.removeFromSuperview()
@@ -89,6 +69,12 @@ public class SwitchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        firstBuilder()
+
+        self.addChildViewController(goodJokeViewController1)
+        self.view.insertSubview(goodJokeViewController1.view, atIndex: 0)
+        goodJokeViewController1.didMoveToParentViewController(self)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     

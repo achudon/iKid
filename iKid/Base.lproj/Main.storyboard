@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Good-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController storyboardIdentifier="Good1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9pv-A4-QxB" customClass="GoodJokeViewController1" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="GoodJokeSwitchController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -17,26 +18,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here's a good joke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddl-9C-aQl">
-                                <rect key="frame" x="229" y="290" width="142" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmK-R1-0eJ">
-                                <rect key="frame" x="541" y="513" width="39" height="30"/>
-                                <state key="normal" title="NEXT"/>
-                                <connections>
-                                    <action selector="SwitchGood2:" destination="9pv-A4-QxB" eventType="touchUpInside" id="b0h-kU-93V"/>
-                                </connections>
-                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5q8-kQ-uov">
+                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem id="OJb-Lv-jF9"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Xt2-Ri-utc"/>
+                                    <barButtonItem title="NEXT" id="beg-I3-ukf">
+                                        <connections>
+                                            <action selector="switchViews:" destination="9pv-A4-QxB" id="Pwp-aV-J3E"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ddl-9C-aQl" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="7Fq-DM-zU9"/>
-                            <constraint firstItem="fmK-R1-0eJ" firstAttribute="trailing" secondItem="ddl-9C-aQl" secondAttribute="trailing" constant="209" id="JDP-3s-gUz"/>
-                            <constraint firstItem="fmK-R1-0eJ" firstAttribute="top" secondItem="ddl-9C-aQl" secondAttribute="bottom" constant="202" id="Nzg-Vi-BhW"/>
-                            <constraint firstItem="ddl-9C-aQl" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="R01-jn-ArE"/>
+                            <constraint firstItem="5q8-kQ-uov" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-20" id="Hlo-6v-Zch"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5q8-kQ-uov" secondAttribute="trailing" constant="-20" id="Puq-fq-NsR"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="5q8-kQ-uov" secondAttribute="bottom" id="p85-vT-4iE"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Good" image="first" id="acW-dT-cKf"/>
@@ -45,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="-659"/>
         </scene>
-        <!--Good Joke View Controller2-->
+        <!--Good Joke View Controller1-->
         <scene sceneID="xKz-m4-Hy9">
             <objects>
-                <viewController storyboardIdentifier="Good2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uRA-ov-nCB" customClass="GoodJokeViewController2" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Good1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uRA-ov-nCB" customClass="GoodJokeViewController1" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w9w-wO-6rf"/>
                         <viewControllerLayoutGuide type="bottom" id="IcH-6D-O5N"/>
@@ -57,8 +56,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Punch line for good joke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqz-pE-wXB">
-                                <rect key="frame" x="208" y="290" width="185" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good joke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqz-pE-wXB">
+                                <rect key="frame" x="261" y="289" width="78" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -74,6 +73,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRR-Jr-Qvg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1400" y="-659"/>
+        </scene>
+        <!--Good Joke View Controller2-->
+        <scene sceneID="wz7-Kc-8n7">
+            <objects>
+                <viewController storyboardIdentifier="Good2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AiX-De-b8j" customClass="GoodJokeViewController2" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i4a-Ni-fKR"/>
+                        <viewControllerLayoutGuide type="bottom" id="sDW-yb-pzF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sd5-D5-Ocg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Punch line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uei-ow-YGw">
+                                <rect key="frame" x="260" y="290" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uei-ow-YGw" firstAttribute="centerX" secondItem="Sd5-D5-Ocg" secondAttribute="centerX" id="3QQ-DV-i0k"/>
+                            <constraint firstItem="uei-ow-YGw" firstAttribute="centerY" secondItem="Sd5-D5-Ocg" secondAttribute="centerY" id="tgy-gt-TgU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c4d-fX-blD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2070" y="-642"/>
         </scene>
         <!--Pun-->
         <scene sceneID="2Dr-sj-J8l">

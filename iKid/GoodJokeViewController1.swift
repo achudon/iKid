@@ -11,8 +11,4 @@ import UIKit
 
 class GoodJokeViewController1: UIViewController {
     
-    @IBAction func SwitchGood2(sender: UIButton) {
-        
-        SwitchViewController.SwitchViewController(GoodJokeViewController1, to: GoodJokeViewController2)
-    }
 }
